@@ -10,6 +10,7 @@
 :root{
     --clr: #2d81b9;
     --clr2: #fff;
+    --clr3: #00d4ff;
 }
 .content{
     padding-top: 32px;
@@ -65,14 +66,14 @@
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: var(--clr2);
+    color: #fff;
 }
 .navigation ul li.active a .icon{
     transform: translateY(-32px);
 }
 .navigation ul li a .text{
     position: absolute;
-    color: var(--clr2);
+    color: #fff;
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -92,7 +93,7 @@
     height: 60px;
     background: var(--clr);
     border-radius: 50%;
-    border: 6px solid var(--clr2);
+    border: 6px solid var(--clr2); /* color del circulo en el nav */
     transition: 0.5s;
 }
 
