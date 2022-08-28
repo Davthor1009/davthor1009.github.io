@@ -1,0 +1,53 @@
+/*IMPORTANDO FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*ESTILO GENERAL*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --azul: #2d81b9;
+}
+
+/*HEADER*/
+.logo{
+    width: 100%;
+    height: 60px;
+    background: var(--azul);
+    color: #eff3fd;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/*NAVBAR*/
+.navbar{
+    background: aqua;
+    width: 100%;
+    height: 70px;
+    position: sticky top;
+    
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 70px;
+}
+.navbar ul li a{
+    padding: 20px;
+    border: 1px solid;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
