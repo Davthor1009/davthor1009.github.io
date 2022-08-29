@@ -13,33 +13,35 @@
 }
 
 /*HEADER*/
-.logo{
+.content{
     width: 100%;
-    height: 60px;
-    background: var(--azul);
-    color: #eff3fd;
-    font-size: 20px;
-    padding-left: 10px;
+    margin: auto;
 }
-
-/*NAVBAR*/
-.navbar{
-    background: aqua;
+header .navbar{
+    background: var(--azul);
+    margin-bottom: 10px;
     width: 100%;
-    height: 70px;
-    position: sticky top;
+}
+header .navbar ul{
+    list-style: none;
+    overflow: hidden;
+}
+header .navbar ul li{
+    float: left;
     
 }
-.navbar ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 70px;
-}
-.navbar ul li a{
+header .navbar ul li a{
+    display: block;
     padding: 20px;
-    border: 1px solid;
+    color: #fff;
 }
+header .navbar ul li a:hover{
+    background: lightslategray;
+}
+.active{
+    background: lightseagreen;
+}
+/*NAVBAR*/
 
 /**/
 /**/
