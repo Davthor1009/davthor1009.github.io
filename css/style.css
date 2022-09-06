@@ -10,12 +10,14 @@
 }
 :root{
     --azul: #2d81b9;
+    --verde: #20b2aa;
 }
 
 /*HEADER*/
 .content{
     width: 100%;
     margin: auto;
+    background: var(--azul);
 }
 header .navbar{
     background: var(--azul);
@@ -27,8 +29,7 @@ header .navbar ul{
     overflow: hidden;
 }
 header .navbar ul li{
-    float: left;
-    
+    float: right;
 }
 header .navbar ul li a{
     display: block;
@@ -36,10 +37,10 @@ header .navbar ul li a{
     color: #fff;
 }
 header .navbar ul li a:hover{
-    background: lightslategray;
+    background: var(--verde);
 }
 .active{
-    background: lightseagreen;
+    background: var(--verde);
 }
 /*NAVBAR*/
 
