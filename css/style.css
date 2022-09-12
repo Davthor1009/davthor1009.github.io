@@ -4,53 +4,26 @@
 /*ESTILO GENERAL*/
 *{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-:root{
-    --azul: #2d81b9;
-    --verde: #20b2aa;
-}
-
-/*HEADER*/
-.content{
-    width: 100%;
-    margin: auto;
-    background: var(--azul);
-}
-header .navbar{
-    background: var(--azul);
-    margin-bottom: 10px;
-    width: 100%;
-}
-header .navbar ul{
     list-style: none;
-    overflow: hidden;
 }
-header .navbar ul li{
-    float: right;
+#mycarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+    height: 91vh;
 }
-header .navbar ul li a{
-    display: block;
-    padding: 20px;
-    color: #fff;
+.carousel-item:nth-child(1) {
+    background-image: url('../img/foto1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-header .navbar ul li a:hover{
-    background: var(--verde);
+.carousel-item:nth-child(2) {
+    background-image: url('../img/foto2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-.active{
-    background: var(--verde);
+.carousel-caption{
+    background: rgb(0, 0, 0,0.7);
 }
-/*NAVBAR*/
-
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
