@@ -29,4 +29,46 @@
 }
 .banner{
     height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.md-form label{
+    position: absolute;
+    top: 0;
+    font-size: 1rem;
+    color: #757575;
+    cursor: text;
+    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+.md-form input, .md-form textarea{
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: transparent;
+    border: none; 
+    border-bottom: 1px solid #ced4da; 
+    border-radius: 0; 
+    outline: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none; 
+    -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out; 
+    transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out; 
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out; 
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+}
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 0 auto;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+    float: right;
 }
