@@ -1,18 +1,9 @@
-// Get the container element
-var btnContainer = document.getElementById("form-p");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("txt");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++){
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-      // If there's no active class
-        if (current.length > 0) {
-            current[0].className = current[0].className.replace(" active", "");
-        }
-      // Add the active class to the current/clicked button
-        this.className += " active";
-    });
-}
+$(window).scroll(function() {
+  if ($("#nav").offset().top > 56) {
+    $("#nav").addClass("bg-scroll bg-dark");
+    $("#nav").removeClass("bg-primary");
+  } else{
+    $("#nav").removeClass("bg-scroll bg-dark");
+    $("#nav").addClass("bg-primary");
+  }
+});
