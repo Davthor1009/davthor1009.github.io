@@ -54,6 +54,9 @@
 }
 /*----------------------*/
 /*-- section team --*/
+.img-team{
+    max-width: 100%;
+}
 .section-padding-md {
     padding-top: 110px;
     padding-bottom: 90px;
