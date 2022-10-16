@@ -38,6 +38,7 @@
     z-index: 1;
     overflow: hidden;
     padding: 110px 0 80px;
+    width: 100%;
 }
 .about-box .content-holder .item-title {
     font-weight: 700;
