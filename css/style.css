@@ -1,100 +1,78 @@
-*{
-    color: white;
-    font-family: sans-serif;
-    transition: 0.2s ease-in-out;
-    user-select: none;
+.container {
+    text-align: center;
 }
 
-.aling{
+.gameModes {
+    justify-content: center;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 315px;
+    margin: 0 auto;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    gap: 5px;
+    /* Agregar espacio entre las celdas */
+}
+
+.cell {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-body{
-    background-color: #252A34;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    text-align: center;
-    padding-top: 5vh;
-}
-
-.turn-container{
-    width: 170px;
-    height: 80px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    position: relative;
-}
-
-.turn-container h3{
-    font-size: 1.6rem;
-    margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.turn-container .turn-box{
-    border: 3px solid black;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.turn-container .turn-box:nth-child(even){
-    border-right: none;
-}
-
-.bg{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 85px;
-    height: 40px;
-    background-color: #ff2e63;
-    z-index: -1;
-}
-
-.main-grid{
-    display:  grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 250px;
-    width: 250px;
-    margin: 30px auto;
-    border: 2px solid black;
-}
-
-.box{
     cursor: pointer;
-    font-size: 2rem;
-    font-weight: 700;
-    border: 2px solid black;
+    background-color: #f0f0f0;
+    /* Color de fondo */
 }
 
-.box:hover{
-    background-color: #ff2e63;
+.cell:hover {
+    background-color: #e0e0e0;
+    /* Color de fondo al pasar el ratón */
 }
 
-#play-again{
-    background-color: #ff2e63;
-    padding: 10px 25px;
+.status {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.scoreboard div {
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    font-size: 1.2rem;
     border-radius: 5px;
-    cursor: pointer;
-    display: none;
+    transition: background-color 0.3s;
+    margin: auto;
 }
 
-#play-again:hover{
-    padding: 10px 40px;
-    background-color: #08d9d6;
-    color: black;
+button:hover {
+    background-color: #0056b3;
+    /* Color de fondo del botón al pasar el ratón */
 }
 
-
-
-
-
-
+.winning-cell {
+    background-color: #4CAF50;
+    /* Color de fondo de las celdas ganadoras */
+    color: white;
+}
